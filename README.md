@@ -23,7 +23,7 @@ We provide evaluation support for nine InD-OOD dataset pairs (for details, see o
 ## Setup
 ### Download data:
 First download this folder in your local machine. Then download the model checkpoints and other files byfollowing the following steps:
-1) Go to Google Drive Link for Data: [https://drive.google.com/drive/folders/1TkIVos7gLdTOaRbMhpMsEVENWq5AZ_Bb?usp=sharing](https://drive.google.com/drive/folders/1TkIVos7gLdTOaRbMhpMsEVENWq5AZ_Bb?usp=sharing)).
+1) Go to Google Drive Link for Data: [https://drive.google.com/drive/folders/1TkIVos7gLdTOaRbMhpMsEVENWq5AZ_Bb?usp=sharing](https://drive.google.com/drive/folders/1TkIVos7gLdTOaRbMhpMsEVENWq5AZ_Bb?usp=sharing).
 2) Download the `saved_checkpoints` folder and keep it in the current `OOD_synthetic` folder. This folder contains the checkpoints required to run rhe main experiments.
 3) Download the `saved_data_selec-class` folder and keep it in the current `OOD_synthetic` folder. This folder contains the data required to run the selective classification experiments.
 
