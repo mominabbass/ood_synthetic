@@ -134,7 +134,7 @@ def setup_llama2_7b(model_name, params, all_train_sentences, all_train_labels, t
     if llamma2_7b_model is None:
         print("Setting up Llama-2 7b model")
         # folder_name = "saved_models/agnews/agnews_meta-llama_Llama-2-7b-hf_0shot_trsz6000_lr0.00035_tkn8_tep35_cep14_acc0.87333.pt"
-        model_name =  '/home/abbasm2/hugginface/hub/Llama-2-13b-hf'
+        model_name =  '/home/local_acc/hugginface/hub/Llama-2-13b-hf'
 
         # device_map = {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0,
         #               'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0,
@@ -187,7 +187,7 @@ def setup_llama2_13b(model_name, params, all_train_sentences, all_train_labels, 
             else:
                 folder_name = "saved_checkpoints/synthetic_CC_gsm8k_Llama-2-13b-hf_acc0.95667.pt"
                 
-            model_name =  '/home/abbasm2/hugginface/hub/Llama-2-13b-hf'
+            model_name =  '/home/local_acc/hugginface/hub/Llama-2-13b-hf'
 
             ## Use device_map to distribute model layers across available devices if your GPUs have limited capacity.
             # device_map = {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0,
@@ -221,7 +221,7 @@ def setup_llama2_13b(model_name, params, all_train_sentences, all_train_labels, 
             llamma2_13b_model.config.pad_token_id = llamma2_13b_model.config.eos_token_id
             print("Finished")
         else:
-            model_name =  '/home/abbasm2/hugginface/hub/Llama-2-13b-hf'
+            model_name =  '/home/local_acc/hugginface/hub/Llama-2-13b-hf'
             model_name_save = 'Llama-2-13b-hf'
             
             text_column = "sentence"
