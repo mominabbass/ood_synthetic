@@ -133,7 +133,7 @@ def setup_llama2_7b(model_name, params, all_train_sentences, all_train_labels, t
         else:
             folder_name = "saved_checkpoints/selective_classification_binary-pos-neg_sexual_drug_Llama-2-7b-hf_acc0.823.pt"
         
-        model_name = '/home/abbasm2/hugginface/hub/Llama-2-7b-hf'
+        model_name = '/home/local_acc/hugginface/hub/Llama-2-7b-hf'
 
         ## Use device_map to distribute model layers across available devices if your GPUs have limited capacity.
         # device_map = {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0,
