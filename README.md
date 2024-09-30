@@ -32,7 +32,7 @@ Use the following command to download `Llama-2-13b-hf` in a local folder. In the
 ```
 python download_HF_models.py
 ```
-For the rest of the code, use this `local_dir` where the model was saved, and update the relevant files to reference this directory whenever a model is loaded ( For example, modify the `model_name` parameter in the `setup_llama2_13b` function within the `utils.py` file to point to the correct local directory).
+For the rest of the code, use this `local_dir` where the model was saved, and update the relevant files to reference this directory whenever a model is loaded (For example, modify the `model_name` parameter in the `setup_llama2_13b` function within the `utils.py` file to point to the correct local directory).
 
 ## Running Ours:
 ### Test:
