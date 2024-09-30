@@ -66,14 +66,6 @@ After training the checkpoints will be saved in the 'saved_checkpoints' folder. 
 
 To run another set of experiments, feel free to change the `--dataset` parameter from the following InD-OOD options: ['civil_comments_toxicity_OOD_gsm8k', 'civil_comments_toxicity_OOD_mbpp', 'civil_comments_toxicity_OOD_sst2', 'civil_comments_toxicity_OOD_toxigen', 'response_beavertails_unethical_OOD_gsm8k', 'response_beavertails_unethical_OOD_mbpp', 'response_beavertails_unethical_OOD_sexual-drug', 'response_beavertails_unethical_OOD_discrimincation-hate'].
 
-
-## Running Selective Classification:
-```
-CUDA_VISIBLE_DEVICES=0 python run_selective_classification/run_classification.py --model="llama2_7b" --dataset="response_beavertails_unethical_OOD_sexual-drug" --coverage=0.2 --method='synthetic'
-```
-
-To run another set of experiments, feel free to change the `--coverage` parameter from [0.2, 0.4, 0.6, 0.8, 1.0] and the `--method` parameter from ['msp', 'energy', 'dice', 'synthetic'].
-
 ## Running RLHF Reward model filtering:
 ### To run experiments on the original OOD data, run:
 ```
@@ -84,3 +76,11 @@ CUDA_VISIBLE_DEVICES=0 python run_RLHF_reward/reward_bench_train_original.py
 ```
 CUDA_VISIBLE_DEVICES=0 python run_RLHF_reward/reward_bench_train_synthetic.py
 ```
+
+## Running Selective Classification:
+```
+CUDA_VISIBLE_DEVICES=0 python run_selective_classification/run_classification.py --model="llama2_7b" --dataset="response_beavertails_unethical_OOD_sexual-drug" --coverage=0.2 --method='synthetic'
+```
+
+To run another set of experiments, feel free to change the `--coverage` parameter from [0.2, 0.4, 0.6, 0.8, 1.0] and the `--method` parameter from ['msp', 'energy', 'dice', 'synthetic'].
+
