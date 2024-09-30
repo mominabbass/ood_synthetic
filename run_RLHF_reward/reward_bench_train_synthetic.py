@@ -267,12 +267,12 @@ class GPTRewardModel(nn.Module):
         return TokenClassifierOutput(loss=loss, logits=logits, hidden_states=transformer_outputs.hidden_states,attentions=transformer_outputs.attentions)
 
 ## Load the model and tokenizer
-reward_model = GPTRewardModel('/home/abbasm2/hugginface/hub/Llama-2-7b-chat-hf')
+reward_model = GPTRewardModel('/home/local_acc/hugginface/hub/Llama-2-7b-chat-hf')
 reward_tokenizer = reward_model.tokenizer
 reward_tokenizer.truncation_side = "left"
 
 # Note: The `token` parameter refers to your Hugging Face access token, required to download private or restricted models.
-directory = snapshot_download(repo_id="berkeley-nest/Starling-RM-7B-alpha", token='enter_your_HF_token_here', local_dir='/home/abbasm2/hugginface/hub/Starling-RM-7B-alpha')
+directory = snapshot_download(repo_id="berkeley-nest/Starling-RM-7B-alpha", token='enter_your_HF_token_here', local_dir='/home/local_acc/hugginface/hub/Starling-RM-7B-alpha')
 for fpath in os.listdir(directory):
     if fpath.endswith(".pt") or fpath.endswith("model.bin"):
         checkpoint = os.path.join(directory, fpath)
