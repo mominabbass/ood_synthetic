@@ -24,15 +24,15 @@ We provide evaluation support for nine InD-OOD dataset pairs (for details, see o
 ### Download data:
 First download this folder in your local machine. Then download the model checkpoints and other files byfollowing the following steps:
 1) Go to Google Drive link: [https://drive.google.com/drive/folders/1TkIVos7gLdTOaRbMhpMsEVENWq5AZ_Bb?usp=sharing](https://drive.google.com/drive/folders/1TkIVos7gLdTOaRbMhpMsEVENWq5AZ_Bb?usp=sharing).
-2) Download the `saved_checkpoints` folder and keep it in the current `OOD_synthetic` folder. This folder contains the checkpoints required to run rhe main experiments.
-3) Download the `saved_data_selec-class` folder and keep it in the current `OOD_synthetic` folder. This folder contains the data required to run the selective classification experiments.
+2) Download the `saved_checkpoints` folder and place it in the current `OOD_synthetic` directory. This folder contains the necessary checkpoints for running the main experiments.
+3) Download the `saved_data_selec-class` folder and place it in the `OOD_synthetic` directory. This folder contains the data needed for selective classification experiments.
 
 ### Download model in a local folder:
 Use the following command to download `Llama-2-13b-hf` in a local folder. In the `download_HF_models.py` file, please enter your `Hugging Face access token` (left blank here for anonymity per conference guidelines). Also, specify the `local_dir` where you want to save the model on your machine. To download a different model from Hugging Face, modify the `repo_id` as needed:
 ```
 python download_HF_models.py
 ```
-For the rest of the code, use this `local_dir` where the model was saved, and update the `utils.py` file to reference this directory whenever a checkpoint is required.
+For the rest of the code, use this `local_dir` where the model was saved, and update the relevant files to reference this directory whenever a model is loaded ( For example, modify the `model_name` parameter in the `setup_llama2_13b` function within the `utils.py` file to point to the correct local directory).
 
 ## Running Ours:
 ### Test:
@@ -45,7 +45,7 @@ CUDA_VISIBLE_DEVICES=0 python run_baselines/run_classification.py --model="llama
 CUDA_VISIBLE_DEVICES=0 python run_baselines/run_classification.py --model="llama2_13b" --dataset="civil_comments_toxicity_OOD_toxigen" --train
 ```
 
-After training the checkpoints will be saved in the 'saved_checkpoints' folder. Load the checkpoint by changing the 'folder_name' in setup_llama2_13b function in the utils.py file.
+After training is complete, the checkpoints will be saved in the `saved_checkpoints` folder. Load the checkpoint by changing the `folder_name` in setup_llama2_13b function in the `utils.py` file.
 To run another set of experiments, feel free to change the `--dataset` parameter from the following InD-OOD options: ['civil_comments_toxicity_OOD_gsm8k', 'civil_comments_toxicity_OOD_mbpp', 'civil_comments_toxicity_OOD_sst2', 'civil_comments_toxicity_OOD_toxigen', 'response_beavertails_unethical_OOD_gsm8k', 'response_beavertails_unethical_OOD_mbpp', 'response_beavertails_unethical_OOD_sexual-drug', 'response_beavertails_unethical_OOD_discrimincation-hate'].
 
 ## Running Baselines:
