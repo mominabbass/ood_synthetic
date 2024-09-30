@@ -18,7 +18,7 @@ conda activate OOD_synthetic
 ```
 
 ## Datasets
-We provide evaluation support for nine InD-OOD dataset pairs (for details, see our paper). To add more text-classification datasets, simply define the prompt format and label space in the same way as the current datasets in data_utils.py.
+We provide evaluation support for nine InD-OOD dataset pairs (for details, see our paper). To add more text-classification datasets, simply define the prompt format and label space in the same way as the current datasets in `data_utils.py`.
 
 ## Setup
 ### Download data:
