@@ -405,7 +405,7 @@ reward_tokenizer = reward_model.tokenizer
 reward_tokenizer.truncation_side = "left"
 
 # Note: The `token` parameter refers to your Hugging Face access token, required to download private or restricted models. 
-directory = snapshot_download(repo_id="berkeley-nest/Starling-RM-7B-alpha", token='enter_your_HF_token_here', local_dir='/home/abbasm2/hugginface/hub/Starling-RM-7B-alpha')
+directory = snapshot_download(repo_id="berkeley-nest/Starling-RM-7B-alpha", token='enter_your_HF_token_here', local_dir='/home/local_acc/hugginface/hub/Starling-RM-7B-alpha')
 for fpath in os.listdir(directory):
     if fpath.endswith(".pt") or fpath.endswith("model.bin"):
         checkpoint = os.path.join(directory, fpath)
