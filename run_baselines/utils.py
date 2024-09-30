@@ -127,7 +127,7 @@ def setup_llama2_7b(model_name, params, all_train_sentences, all_train_labels, t
     global llamma2_7b_tokenizer
     if llamma2_7b_model is None:
         print("Setting up Llama-2 7b model")
-        model_name = '/home/abbasm2/hugginface/hub/Llama-2-7b-hf'
+        model_name = '/home/local_acc/hugginface/hub/Llama-2-7b-hf'
 
         config = AutoConfig.from_pretrained(model_name)
         config.pretraining_tp = 1
@@ -156,7 +156,7 @@ def setup_llama2_13b(model_name, params, all_train_sentences, all_train_labels, 
                 else "saved_checkpoints/baselines_civil_comments_toxicity_Llama-2-13b-hf_acc0.935.pt"
             )
 
-            model_name = '/home/abbasm2/hugginface/hub/Llama-2-13b-hf'
+            model_name = '/home/local_acc/hugginface/hub/Llama-2-13b-hf'
 
             ## Use device_map to distribute model layers across available devices if your GPUs have limited capacity.
             # device_map = {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0,
@@ -191,7 +191,7 @@ def setup_llama2_13b(model_name, params, all_train_sentences, all_train_labels, 
             print("Finished")
 
         else:
-            model_name =  '/home/abbasm2/hugginface/hub/Llama-2-13b-hf'
+            model_name =  '/home/local_acc/hugginface/hub/Llama-2-13b-hf'
             model_name_save = 'Llama-2-13b-hf'
             
             text_column = "sentence"
