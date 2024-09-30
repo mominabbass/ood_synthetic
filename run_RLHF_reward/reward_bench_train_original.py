@@ -400,7 +400,7 @@ class GPTRewardModel(nn.Module):
         return TokenClassifierOutput(loss=loss, logits=logits, hidden_states=transformer_outputs.hidden_states,attentions=transformer_outputs.attentions)
 
 ## Load the model and tokenizer
-reward_model = GPTRewardModel('/home/abbasm2/hugginface/hub/Llama-2-7b-chat-hf')
+reward_model = GPTRewardModel('/home/local_acc/hugginface/hub/Llama-2-7b-chat-hf')
 reward_tokenizer = reward_model.tokenizer
 reward_tokenizer.truncation_side = "left"
 
