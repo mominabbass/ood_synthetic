@@ -72,6 +72,8 @@ To run another set of experiments, feel free to change the `--dataset` parameter
 CUDA_VISIBLE_DEVICES=0 python run_selective_classification/run_classification.py --model="llama2_7b" --dataset="response_beavertails_unethical_OOD_sexual-drug" --coverage=0.2 --method='synthetic'
 ```
 
+To run another set of experiments, feel free to change the `--coverage` parameter from [0.2, 0.4, 0.6, 0.8, 1.0] and the `--method` parameter from ['msp', 'energy', 'dice', 'synthetic'].
+
 ## Running RLHF Reward model filtering:
 ### To run experiemnts on the orginal OOD data, run:
 ```
