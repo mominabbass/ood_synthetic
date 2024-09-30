@@ -1,6 +1,6 @@
 # Out-of-Distribution Detection using Synthetic Data Generation
 
-This codebase supports Llama-2, Llama-3, GPT-J, and any other language model available through [HuggingFace Transformers](https://huggingface.co/models).
+This codebase supports Llama-2, and any other language model available through [HuggingFace Transformers](https://huggingface.co/models).
 
 ## Dependencies
 
