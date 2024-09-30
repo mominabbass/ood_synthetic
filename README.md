@@ -46,6 +46,7 @@ CUDA_VISIBLE_DEVICES=0 python run_synthetic/run_classification.py --model="llama
 ```
 
 After training is complete, the checkpoints will be saved in the `saved_checkpoints` folder. Load the checkpoint by changing the `folder_name` in setup_llama2_13b function in the `utils.py` file.
+
 To run another set of experiments, feel free to change the `--dataset` parameter from the following InD-OOD options: ['civil_comments_toxicity_OOD_gsm8k', 'civil_comments_toxicity_OOD_mbpp', 'civil_comments_toxicity_OOD_sst2', 'civil_comments_toxicity_OOD_toxigen', 'response_beavertails_unethical_OOD_gsm8k', 'response_beavertails_unethical_OOD_mbpp', 'response_beavertails_unethical_OOD_sexual-drug', 'response_beavertails_unethical_OOD_discrimincation-hate'].
 
 Note: `CUDA_VISIBLE_DEVICES` is an environment variable that specifies which GPU(s) is being used; for example, setting `CUDA_VISIBLE_DEVICES=0` will make only GPU 0 accessible.
@@ -62,6 +63,7 @@ CUDA_VISIBLE_DEVICES=0 python run_baselines/run_classification.py --model="llama
 ```
 
 After training the checkpoints will be saved in the 'saved_checkpoints' folder. Load the checkpoint by changing the 'folder_name' in setup_llama2_13b function in the utils.py file.
+
 To run another set of experiments, feel free to change the `--dataset` parameter from the following InD-OOD options: ['civil_comments_toxicity_OOD_gsm8k', 'civil_comments_toxicity_OOD_mbpp', 'civil_comments_toxicity_OOD_sst2', 'civil_comments_toxicity_OOD_toxigen', 'response_beavertails_unethical_OOD_gsm8k', 'response_beavertails_unethical_OOD_mbpp', 'response_beavertails_unethical_OOD_sexual-drug', 'response_beavertails_unethical_OOD_discrimincation-hate'].
 
 
