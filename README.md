@@ -75,12 +75,12 @@ CUDA_VISIBLE_DEVICES=0 python run_selective_classification/run_classification.py
 To run another set of experiments, feel free to change the `--coverage` parameter from [0.2, 0.4, 0.6, 0.8, 1.0] and the `--method` parameter from ['msp', 'energy', 'dice', 'synthetic'].
 
 ## Running RLHF Reward model filtering:
-### To run experiemnts on the orginal OOD data, run:
+### To run experiments on the original OOD data, run:
 ```
 CUDA_VISIBLE_DEVICES=0 python run_RLHF_reward/reward_bench_train_original.py
 ```
 
-### To run experiemnts on the orginal OOD data, run:
+### To run experiments on our synthetic OOD data, run:
 ```
 CUDA_VISIBLE_DEVICES=0 python run_RLHF_reward/reward_bench_train_synthetic.py
 ```
