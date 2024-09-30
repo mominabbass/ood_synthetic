@@ -1,4 +1,4 @@
-name: OOD_fewshot
+name: OOD_synthetic
 channels:
   - anaconda
   - pytorch
@@ -193,4 +193,4 @@ dependencies:
       - triton==3.0.0
       - xxhash==3.4.1
       - yarl==1.9.4
-prefix: /home/abbasm2/miniconda3/envs/OOD_fewshot
+prefix: /home/abbasm2/miniconda3/envs/OOD_synthetic
