@@ -3,7 +3,7 @@
 
 
 
-This codebase supports Llama-2, and any other language model available through [Hugging Face](https://huggingface.co/models) <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face Logo" width="30" />.
+This codebase supports Llama-2, and any other language model available through [Hugging Face](https://huggingface.co/models) <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face Logo" width="27" />.
 
 
 ## Installation
