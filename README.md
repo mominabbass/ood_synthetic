@@ -21,7 +21,7 @@ conda activate OOD_synthetic
 ## Datasets
 We provide evaluation support for nine InD-OOD dataset pairs (for details, see our paper). To add more text-classification datasets, simply define the prompt format and label space in the same way as the current datasets in `data_utils.py`. 
 
-# Downloading Synthetic OOD data
+### Downloading Synthetic OOD data
 Our suntheticd data is in the `data/data_ethical` folder. However we also also made it available on [HuggingFace](https://huggingface.co/datasets/abbasm2/synthetic_ood). 
 
 To download with python, you'll need to create a Hugging Face auth_token by following [these instructions](https://huggingface.co/docs/hub/security-tokens). As discussed below, you can manually use `use_auth_token={auth_token}` or register your token with your transformers installation via huggingface-cli. For example, to load the synthetic math data, run the following code:
