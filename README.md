@@ -24,7 +24,7 @@ We provide evaluation support for nine InD-OOD dataset pairs (for details, see o
 Our synthetic data can be found in the data/data_ethical directory. It’s also available on [Hugging Face](https://huggingface.co/datasets/abbasm2/synthetic_ood) <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face Logo" width="25" />.
  
 
-To download the data using Python, you'll first need to create a Hugging Face authentication token by following [these instructions](https://huggingface.co/docs/hub/security-tokens). Once you have the token, you can either manually use `use_auth_token={your_token_here}` or register it with your Hugging Face installation via the `huggingface-cli`. For example, to load the synthetic math data, run the following code:
+To download the data from Hugging Face, you'll first need to create a Hugging Face authentication token by following [these instructions](https://huggingface.co/docs/hub/security-tokens). Once you have the token, you can either manually use `use_auth_token={your_token_here}` or register it with your Hugging Face installation via the `huggingface-cli`. For example, to load the synthetic math data, run the following code:
 
 ```
 from datasets import load_dataset
