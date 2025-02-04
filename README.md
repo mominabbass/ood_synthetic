@@ -30,7 +30,7 @@ To download the data using Python, you'll first need to create a Hugging Face au
 from datasets import load_dataset
 
 # Load the dataset from Hugging Face
-dataset = load_dataset("abbasm2/synthetic_ood", use_auth_token='your_token_here', data_files="OOD_samples_llama-3-70b-instruct_java_augmented_RLHF.csv", split="train")
+dataset = load_dataset("abbasm2/synthetic_ood", use_auth_token='your_token_here', data_files="OOD_samples_llama-3-70b-instruct_math_augmented_beaver-withresponses.csv", split="train")
 
 # Check the contents of the dataset
 print(dataset)
