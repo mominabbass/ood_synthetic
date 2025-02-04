@@ -1,5 +1,5 @@
 # Out-of-Distribution Detection using Synthetic Data Generation
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([https://arxiv.org/abs/2401.12406](https://github.com/mominabbass/OOD_synthetic))  [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([[https://arxiv.org/abs/2401.12406](https://github.com/mominabbass/OOD_synthetic)](https://github.com/mominabbass/OOD_synthetic))  [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
 
 
