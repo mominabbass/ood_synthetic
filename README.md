@@ -1,4 +1,7 @@
 # Out-of-Distribution Detection using Synthetic Data Generation
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([https://arxiv.org/abs/2401.12406](https://github.com/mominabbass/OOD_synthetic))  [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+
+
 
 This codebase supports Llama-2, and any other language model available through [HuggingFace Transformers](https://huggingface.co/models).
 
@@ -22,20 +25,22 @@ conda activate OOD_synthetic
 We provide evaluation support for nine InD-OOD dataset pairs (for details, see our paper). To add more text-classification datasets, simply define the prompt format and label space in the same way as the current datasets in `data_utils.py`. 
 
 ### Downloading Synthetic OOD data
-Our suntheticd data is in the `data/data_ethical` folder. However we also also made it available on [HuggingFace](https://huggingface.co/datasets/abbasm2/synthetic_ood). 
+Our synthetic data can be found in the data/data_ethical directory. We’ve also made it available on [HuggingFace](https://huggingface.co/datasets/abbasm2/synthetic_ood). 
 
-To download with python, you'll need to create a Hugging Face auth_token by following [these instructions](https://huggingface.co/docs/hub/security-tokens). As discussed below, you can manually use `use_auth_token={auth_token}` or register your token with your transformers installation via huggingface-cli. For example, to load the synthetic math data, run the following code:
+To download the data using Python, you'll first need to create a Hugging Face authentication token by following [these instructions](https://huggingface.co/docs/hub/security-tokens). Once you have the token, you can either manually use `use_auth_token={auth_token}` or register it with your Hugging Face installation via the `huggingface-cli`. For example, to load the synthetic math data, run the following code:
 
 ```
 from datasets import load_dataset
 
 # Load the dataset from Hugging Face
-dataset = load_dataset("abbasm2/synthetic_ood", data_files="OOD_samples_llama-3-70b-instruct_math_augmented_beaver-withresponses.csv", split="train")
+dataset = load_dataset("abbasm2/synthetic_ood", use_auth_token='your_token_here', data_files="OOD_samples_llama-3-70b-instruct_java_augmented_RLHF.csv", split="train")
 
 # Check the contents of the dataset
 print(dataset)
 print(len(dataset))
 ```
+To load a different OOD synthetic dataset, adjust the `data_files` parameter to point to the appropriate file, which can be found under the [Files and versions](https://huggingface.co/datasets/abbasm2/synthetic_ood/tree/main) tab.
+
 
 ## Setup
 ### Download data:
