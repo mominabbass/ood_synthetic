@@ -36,7 +36,7 @@ dataset = load_dataset("abbasm2/synthetic_ood", use_auth_token='your_token_here'
 print(dataset)
 print(len(dataset))
 ```
-To load a different OOD synthetic dataset, adjust the `data_files` parameter to point to the appropriate file, which can be found under the [Files and versions](https://huggingface.co/datasets/abbasm2/synthetic_ood/tree/main) tab.
+To load a different synthetic OOD dataset, adjust the `data_files` parameter to point to the appropriate file, which can be found under the [Files and versions](https://huggingface.co/datasets/abbasm2/synthetic_ood/tree/main) tab.
 
 
 ## Setup
