@@ -47,7 +47,7 @@ First, download the model checkpoints and other files by following these steps:
 3) Download the `saved_data_selec-class` folder and place it in the current directory. This folder contains the data needed for selective classification experiments.
 
 ### Download model in a local folder:
-Use the following command to download `Llama-2-13b-hf` in a local folder. In the `download_HF_models.py` file, please enter your `Hugging Face access token` (left blank here for anonymity per conference guidelines). Also, specify the `local_dir` where you want to save the model on your machine. To download a different model from Hugging Face, modify the `repo_id` as needed:
+Use the following command to download `Llama-2-13b-hf` in a local folder. In the `download_HF_models.py` file, please enter your `Hugging Face access token`. Also, specify the `local_dir` where you want to save the model on your machine. To download a different model from Hugging Face, modify the `repo_id` as needed:
 ```
 python download_HF_models.py
 ```
