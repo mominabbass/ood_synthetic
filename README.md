@@ -1,5 +1,5 @@
 # Out-of-Distribution Detection using Synthetic Data Generation
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://github.com/mominabbass/ood_synthetic)  [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2502.03323)  [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
 
 
@@ -18,7 +18,7 @@ conda activate OOD_synthetic
 ```
 
 ## Datasets
-We provide evaluation support for nine InD-OOD dataset pairs (for details, see our paper). To add more text-classification datasets, simply define the prompt format and label space in the same way as the current datasets in `data_utils.py`. 
+We provide evaluation support for nine InD-OOD dataset pairs (for details, see our [paper](https://arxiv.org/abs/2502.03323)). To add more text-classification datasets, simply define the prompt format and label space in the same way as the current datasets in `data_utils.py`. 
 
 ### Downloading synthetic OOD data
 Our synthetic data can be found in the data/data_ethical directory. It’s also available on [Hugging Face](https://huggingface.co/datasets/abbasm2/synthetic_ood) <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face Logo" width="25" />.
